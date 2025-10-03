@@ -1,0 +1,398 @@
+<!DOCTYPE html> 
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Балаларға арналған қауіпсіз интернет</title>
+  <style>
+    .top-bar {
+      background: #f0f4ff;
+      padding: 8px 20px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .top-bar a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #2b5dab;
+      font-weight: bold;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80') no-repeat center center;
+      background-size: cover;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e7f0fd;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #d0e2ff;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #2b5dab;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: #2b5dab;
+    }
+
+    ul.rules {
+      list-style: none;
+      padding: 0;
+    }
+
+    .rules li {
+      background: white;
+      margin: 10px 0;
+      padding: 12px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .quiz {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    .quiz img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .quiz button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 10px 10px 0 0;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #story {
+      margin-top: 40px;
+    }
+
+    #story div {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .go-to-game {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .go-to-game button {
+      background: #4a90e2;
+      color: white;
+      font-size: 18px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 480px) {
+      .go-to-game button {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔁 ТІЛ АУЫСТЫРУ -->
+<div class="top-bar">
+  Тіл: 
+  <a href="ru.html">Орысша</a> | 
+  <a href="#">Қазақша</a>
+</div>
+
+<div class="background-image"></div>
+
+<header>
+  <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Құлып" />
+  <h1>Балаларға арналған қауіпсіз интернет</h1>
+  <p>Интернетті дұрыс пайдалану жолдарын үйренеміз</p>
+</header>
+
+<nav>
+  <a href="#rules">Ережелер</a>
+  <a href="#quiz">Викторина</a>
+  <a href="#materials">Еске салғыштар</a>
+  <a href="#story">Өмірдегі оқиға</a>
+</nav>
+
+<main>
+  <section id="rules">
+    <h2>Негізгі қауіпсіздік ережелері</h2>
+    <ul class="rules">
+      <li>🔒 Парольдеріңді ешкімге айтпа.</li>
+      <li>⚠️ Құпия емес сілтемелер мен қосымшаларды ашпа.</li>
+      <li>🕵️‍♂️ Жеке ақпаратты ашық жариялама.</li>
+      <li>🔐 Күрделі парольдерді қолданып, оларды үнемі жаңартып отыр.</li>
+      <li>👨‍👩‍👧 Егер біреу жағымсыз немесе оғаш хабарлар жазса, үлкендерге айт.</li>
+      <li>📥 Таныс емес сайттардан файлдарды жүктеме.</li>
+      <li>🌐 Сайттардың қорғалғанына көз жеткіз (адресі https-пен басталуы тиіс).</li>
+      <li>🚫 Интернеттегі бөтен адамдарға сенбе — олар достық көрінсе де.</li>
+      <li>🛡️ Антивирусты орнатып, жаңартып отыруды ұмытпа.</li>
+      <li>🙅‍♂️ Қорлауға, буллингке және жалған ақпарат таратуға қатыспа.</li>
+    </ul>
+  </section>
+
+<section id="quiz" class="quiz">
+  <h2>🧠 Мини-викторина</h2>
+
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/189/189001.png" />
+    <h3>1. Интернетте өз мекенжайыңды айтуға бола ма?</h3>
+    <button onclick="alert('❌ Жоқ! Бұл қауіпті.')">Иә</button>
+    <button onclick="alert('✅ Дұрыс! Ешқашан айтуға болмайды.')">Жоқ</button>
+  </div>
+
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/7333/7333218.png" />
+    <h3>2. Егер бейтаныс адам кездесу ұсынса не істеу керек?</h3>
+    <button onclick="alert('❌ Бұл өте қауіпті!')">Келіскен жөн</button>
+    <button onclick="alert('✅ Дұрыс! Бұл туралы ересектерге айт.')">Ересектерге айту</button>
+  </div>
+
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/2099/2099076.png" />
+    <h3>3. Сілтемелерге өтпес бұрын оларды тексеру керек пе?</h3>
+    <button onclick="alert('❌ Бұл қауіпті болуы мүмкін!')">Жоқ</button>
+    <button onclick="alert('✅ Дұрыс! Әрқашан тексер.')">Иә</button>
+  </div>
+
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3208/3208751.png" />
+    <h3>4. Ата-анаңның рұқсатынсыз суреттеріңді интернетке салуға бола ма?</h3>
+    <button onclick="alert('❌ Бұл қауіпсіз емес.')">Иә</button>
+    <button onclick="alert('✅ Жарайсың! Алдымен ата-анаңнан сұра.')">Жоқ</button>
+  </div>
+
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" />
+    <h3>5. Егер біреу жағымсыз немесе күмәнді хабарлама жазса не істеу керек?</h3>
+    <button onclick="alert('❌ Бұл қауіпті болуы мүмкін, елемеуге болмайды.')">Елемеу</button>
+    <button onclick="alert('✅ Дұрыс! Ересектерге айт.')">Ересектерге айту</button>
+  </div>
+</section>
+
+
+  <section id="materials" style="margin-top:40px;">
+    <h2>📄 Еске салғыштар мен материалдар</h2>
+    <p>📥 <a href="buklet-kz.png" download>Скачать буклет</a></p>
+    <p>📺 <a href="https://youtu.be/v7C6_jcmPSU?si=rXJGmKW2sT75qy4o" target="_blank">Оқыту видеосын көру</a></p>
+  </section>
+
+  <section id="story">
+    <h2>📘 Өмірден алынған оқиға</h2>
+    <div>
+      <p><strong>Ваняның оқиғасы (10 жас):</strong></p>
+      <p>Бір күні Ваня онлайн ойында бөтен біреуден хабарлама алды. Ол өзін "жаңа дос" деп таныстырып, Ванядан сыйлық жіберу үшін мекенжайын сұрады. Ваня интернетте жеке деректерді бөліспеу керектігін есіне алып, дереу ата-анасына айтты.</p>
+      <p>Ата-анасы оның дұрыс әрекет жасағанын мақтап, қолданушыны бірге бұғаттады.</p>
+      <p><strong>Қорытынды:</strong> Кім достық көрінсе де, интернетте бөтен адамдарға сенуге болмайды.</p>
+    </div>
+  </section>
+  <h2>🎮 Ойын</h2>
+  <!-- ТҮЙМЕ: Ойынға өту -->
+  <div class="go-to-game">
+        <a href="https://wordwall.net/ru/resource/98688781/%d0%b1%d0%b5%d0%b7%d1%8b%d0%bc%d1%8f%d0%bd%d0%bd%d1%8b%d0%b91"><button onclick="document.getElementById('quiz-game').scrollIntoView({ behavior: 'smooth' });">▶️ Ойынға өтіңіз</button></a>
+  </div>
+
+  <section id="quiz-game" style="margin-top:50px;">
+    <h2>🎮 Интерактивті ойын-викторина</h2>
+   <div id="game-container"></div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Қауіпсіз интернет | Мектеп оқушысының жобасы
+</footer>
+
+<script>
+  const quiz = [
+    {
+      q: "Интернетте не істеуге болмайды?",
+      a: [
+        { text: "Достармен сөйлесу", correct: false },
+        { text: "Оқыту видеосын көру", correct: false },
+        { text: "Бөтен адамдарға парольдерді айту", correct: true },
+        { text: "Ойын ойнау", correct: false }
+      ]
+    },
+    {
+      q: "Қай пароль сенімдірек?",
+      a: [
+        { text: "123456", correct: false },
+        { text: "qwerty", correct: false },
+        { text: "Mys3cur3!Pass2025", correct: true },
+        { text: "admin", correct: false }
+      ]
+    },
+    {
+      q: "Онлайн қауіп-қатер алғанда не істеу керек?",
+      a: [
+        { text: "Жай қарап қою", correct: false },
+        { text: "Жаман сөзбен жауап беру", correct: false },
+        { text: "Үлкендерге айту", correct: true },
+        { text: "Интернетті өшіру", correct: false }
+      ]
+    },
+    {
+      q: "Қауіпсіз сайттар қандай?",
+      a: [
+        { text: "https бар сайттар", correct: true },
+        { text: "Мекенжайы жоқ сайттар", correct: false },
+        { text: "Жарнамасы көп сайттар", correct: false },
+        { text: "Барлығы", correct: false }
+      ]
+    },
+    {
+      q: "Антивирусты жаңарту керек пе?",
+      a: [
+        { text: "Жоқ, ол өзі жұмыс істейді", correct: false },
+        { text: "Иә, жаңа қауіптерден қорғау үшін", correct: true },
+        { text: "Жылына бір рет қана", correct: false },
+        { text: "Ауа райына байланысты", correct: false }
+      ]
+    }
+  ];
+
+  let current = 0;
+  let score = 0;
+
+  function createGameUI() {
+    const container = document.getElementById('game-container');
+    container.innerHTML = `
+      <div style="max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family:sans-serif; text-align:center;">
+        <h2 id="question">Жүктелуде...</h2>
+        <div id="answers"></div>
+        <button id="next-btn" style="margin-top:20px; padding:10px 20px; font-size:16px; display:none;">Келесі сұрақ</button>
+      </div>
+    `;
+    document.getElementById('next-btn').onclick = nextQuestion;
+    loadQuestion();
+  }
+
+  function loadQuestion() {
+    const q = quiz[current];
+    document.getElementById("question").textContent = q.q;
+    const answersDiv = document.getElementById("answers");
+    answersDiv.innerHTML = "";
+
+    q.a.forEach(answer => {
+      const btn = document.createElement("button");
+      btn.textContent = answer.text;
+      btn.style.display = "block";
+      btn.style.width = "100%";
+      btn.style.margin = "10px 0";
+      btn.style.padding = "12px";
+      btn.style.fontSize = "16px";
+      btn.style.borderRadius = "8px";
+      btn.style.border = "1px solid #ccc";
+      btn.style.cursor = "pointer";
+      btn.onclick = () => checkAnswer(btn, answer.correct);
+      answersDiv.appendChild(btn);
+    });
+
+    document.getElementById("next-btn").style.display = "none";
+  }
+
+  function checkAnswer(button, correct) {
+    const buttons = document.querySelectorAll("#answers button");
+    buttons.forEach(btn => btn.disabled = true);
+    if (correct) {
+      button.style.backgroundColor = "#4CAF50";
+      button.style.color = "white";
+      score++;
+    } else {
+      button.style.backgroundColor = "#f44336";
+      button.style.color = "white";
+    }
+    document.getElementById("next-btn").style.display = "inline-block";
+  }
+
+  function nextQuestion() {
+    current++;
+    if (current < quiz.length) {
+      loadQuestion();
+    } else {
+      const container = document.getElementById('game-container');
+      container.innerHTML = `
+        <div style="max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family:sans-serif; text-align:center;">
+          <h2>Ойын аяқталды!</h2>
+          <p>Сен <strong>${score}</strong> сұрақтан ${quiz.length}-не дұрыс жауап бердің.</p>
+          <p>${score === quiz.length ? "Керемет! Сен шынайы интернет батырсың! 🏆" : "Жақсы тырысқаның үшін рахмет! Қайталап көр."}</p>
+          <button onclick="restartQuiz()" style="margin-top:20px; padding:10px 20px; font-size:16px;">Қайтадан өту</button>
+        </div>
+      `;
+    }
+  }
+
+  function restartQuiz() {
+    current = 0;
+    score = 0;
+    createGameUI();
+  }
+
+  // Бетті жүктегенде ойын басталады
+  window.onload = createGameUI;
+</script>
+
+</body>
+</html>
